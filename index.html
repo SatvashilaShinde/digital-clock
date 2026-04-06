@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Timer</title>
+        <style type=""text/css">
+            body{
+                background: #ccc;
+            }
+            h1{
+                text-align: center;
+                color: blue;
+            }
+            div{
+                background-color: black;
+                padding: 15px;
+                border: 50px inset;
+                color: yellow;
+                font-size: 6em;
+                text-align: center;
+               
+            }
+
+        </style>
+        
+</head>
+<body>
+<h1>Digital Clock</h1>
+<div id="output"></div>
+
+<script type="text/javascript">
+    setInterval(mytimer,1000);
+
+function mytimer() {
+    const d=new Date();
+    let x=d.toLocaleTimeString()
+    document.getElementById('output').innerHTML=x;
+}
+
+</script>
+</body>
+</html>
